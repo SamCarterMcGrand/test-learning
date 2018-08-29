@@ -28,7 +28,8 @@ public class Expedia {
         driver.findElement(By.id("hotel-checkout-hp-hotel")).sendKeys(checkOut);
         driver.findElement(By.xpath("//*[@id=\"traveler-selector-hp-hotel\"]/div/ul/li/button")).click();
         driver.findElement(By.xpath("//*[@id=\"traveler-selector-hp-hotel\"]/div/ul/li/div/div/div/div[2]/div[4]/button")).click();
-        driver.findElement(By.xpath("//*[@id=\"search-button-hp-package\"]")).click();
+        // driver.findElement(By.xpath("//*[@id=\"hotel-business-travel-radio-no-hp-hotel\"]")).click();
+        driver.findElement(By.cssSelector("button[type=submit]")).click();
 
         // 2. Modify search results page by giving criteria
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);

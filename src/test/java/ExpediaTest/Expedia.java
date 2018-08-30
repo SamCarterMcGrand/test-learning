@@ -13,7 +13,7 @@ public class Expedia {
 
     WebDriver driver;
     String browserType = "chrome";
-    String city = "New York";
+    String city = "Chicago";
     String cityAndState = "Chicago, Illinois";
     String checkIn = "10/10/2018";
     String checkOut = "10/17/2018";
@@ -31,7 +31,7 @@ public class Expedia {
         driver.findElement(By.xpath("//*[@id=\"traveler-selector-hp-hotel\"]/div/ul/li/button")).click();
         driver.findElement(By.xpath("//*[@id=\"traveler-selector-hp-hotel\"]/div/ul/li/div/div/div/div[2]/div[4]/button")).click();
         // driver.findElement(By.xpath("//*[@id=\"hotel-business-travel-radio-no-hp-hotel\"]")).click();
-        driver.findElement(By.cssSelector("button[type='submit][class='btn-primary btn-action  gcw-submit']")).click();
+        driver.findElement(By.xpath("//*[@id=\"gcw-hotel-form-hp-hotel\"]/div[10]/label/button")).click();
         String displayResults = driver.findElement(By.xpath("//*[@id=\"hotelResultTitle\"]/h1")).getText();
 
         boolean dispResultsTruth = true;

@@ -13,8 +13,8 @@ public class Expedia {
 
     WebDriver driver;
     String browserType = "chrome";
-    String city = "Chicago";
-    String cityAndState = "Chicago, Illinois";
+    String city = "New York";
+    String cityAndState = "New York, NY";
     String checkIn = "10/10/2018";
     String checkOut = "10/17/2018";
     String numOfGuests = "2";

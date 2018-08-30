@@ -12,15 +12,15 @@ import java.util.concurrent.TimeUnit;
 
 public class Expedia {
 
-    WebDriver driver;
-    String browserType = "chrome";
-    String city = "Chicago";
-    String cityAndState = "Chicago, Illinois";
-    String checkIn = "10/10/2018";
-    String checkOut = "10/17/2018";
-    String numOfRooms = "1";
-    String numOfGuests = "2";
-    String numOfChildren = "0";
+    private WebDriver driver;
+    private String browserType = "chrome";
+    private String city = "Chicago";
+    private String cityAndState = "Chicago, Illinois";
+    private String checkIn = "10/10/2018";
+    private String checkOut = "10/17/2018";
+    private String numOfRooms = "1";
+    private String numOfGuests = "2";
+    private String numOfChildren = "0";
 
 
     @Test

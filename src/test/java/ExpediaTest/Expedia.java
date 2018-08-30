@@ -12,6 +12,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Expedia {
 
+
     private WebDriver driver;
     private String browserType = "chrome";
     private String city = "Chicago";
@@ -21,6 +22,7 @@ public class Expedia {
     private String numOfRooms = "1";
     private String numOfGuests = "2";
     private String numOfChildren = "0";
+
 
 
     @Test

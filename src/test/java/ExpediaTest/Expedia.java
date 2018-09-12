@@ -8,6 +8,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.Assertion;
 
+import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
 public class Expedia {
@@ -59,11 +60,15 @@ public class Expedia {
         Assert.assertTrue(driver.findElement(By.xpath("//*[@id=\"hotelResultTitle\"]/h1")).isDisplayed());
 
 
+        // 3. Analyze results and make selection
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.findElement(By.cssSelector("input[name='star'][id='star4']")).click();
-        // driver.findElement(By.xpath("//*[@id=\"resultsContainer\"]/section/article[3]/div[2]/div/a")).click();
+        driver.findElement(By.xpath("//*[@id=\"558027\"]/div[2]/div/a")).click();
 
-        // 3. Analyze results and make selection
+        // Switch tabs
+        ArrayList<String> windows = new ArrayList<String>(driver.getWindowHandles());
+        driver.switchTo().window(windows.get(1));
+
 
         // 4. Book reservation
 
